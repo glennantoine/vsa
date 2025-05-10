@@ -20,9 +20,10 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding: 0 16px;
+  padding: 0 20px;
   max-width: 100%;
   box-sizing: border-box;
+  position: relative;
 }
 
 .logo {
@@ -97,7 +98,6 @@
   cursor: pointer;
   font-size: 24px;
   padding: 8px;
-  margin-right: 8px;
 }
 
 .header-placeholder {
@@ -108,6 +108,12 @@
   .contact-btn {
     display: none;
   }
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 @media (max-width: 767px) {

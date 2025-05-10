@@ -4,7 +4,7 @@
       <a routerLink="/" class="logo">
         <span class="logo-text">Aviation CTO</span>
       </a>
-      
+
       <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle menu">
         <mat-icon>{{ isMenuOpen ? 'close' : 'menu' }}</mat-icon>
       </button>
@@ -26,7 +26,9 @@
         </ul>
       </nav>
       
-      <a routerLink="/contact" class="contact-btn btn btn-accent">Get Started</a>
+      <div class="right-section">
+        <a routerLink="/contact" class="contact-btn btn btn-accent">Get Started</a>
+      </div>
     </div>
   </div>
 </header>

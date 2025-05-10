@@ -8,7 +8,7 @@
         commands:
           - npm run build -- --configuration production
     artifacts:
-      baseDirectory: dist/my-angular-app
+      baseDirectory: dist/aviation-cto
       files:
         - '**/*'
     cache:

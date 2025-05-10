@@ -20,6 +20,9 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  padding: 0 16px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -90,9 +93,11 @@
   display: none;
   background: none;
   border: none;
-  color: var(--primary);
+  color: #FFFFFF;
   cursor: pointer;
   font-size: 24px;
+  padding: 8px;
+  margin-right: 8px;
 }
 
 .header-placeholder {
@@ -108,37 +113,48 @@
 @media (max-width: 767px) {
   .menu-toggle {
     display: block;
+    z-index: 1001;
   }
-  
+
   .main-nav {
     position: fixed;
     top: 64px;
     left: 0;
-    width: 100%;
+    width: 100vw; /* Use viewport width */
     height: calc(100vh - 64px);
-    background-color: white;
+    background-color: var(--primary);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-    
+    visibility: hidden; /* Hide by default */
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+
     &.open {
-      transform: translateX(0);
+      visibility: visible;
+      opacity: 1;
     }
   }
   
   .nav-list {
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 0;
   }
-  
+
   .nav-item {
     margin: 1rem 0;
-    
+    width: 100%;
+    text-align: center;
+
     a {
       font-size: 1.25rem;
+      display: block;
+      padding: 10px 0;
+      width: 100%;
     }
   }
   

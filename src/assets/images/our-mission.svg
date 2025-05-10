@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="400px" viewBox="0 0 500 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Our Mission - Aviation</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="skyGradient">
+            <stop stop-color="#007CBE" offset="0%"></stop>
+            <stop stop-color="#13294B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="sunsetGradient">
+            <stop stop-color="#FF6B35" offset="0%"></stop>
+            <stop stop-color="#13294B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="compassGradient">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EBF2FA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#EBF2FA" x="0" y="0" width="500" height="400"></rect>
+        
+        <!-- World map background -->
+        <path d="M50,80 C100,70 150,90 200,75 C250,60 300,80 350,70 C400,60 450,75 500,65 L500,250 C450,260 400,240 350,255 C300,270 250,250 200,260 C150,270 100,250 50,260 L50,80 Z" fill="#13294B" opacity="0.1"></path>
+        
+        <!-- Compass Element -->
+        <g transform="translate(250, 180)">
+            <!-- Outer Circle -->
+            <circle cx="0" cy="0" r="100" fill="url(#skyGradient)"></circle>
+            <circle cx="0" cy="0" r="90" fill="url(#compassGradient)"></circle>
+            
+            <!-- Compass Rose -->
+            <path d="M0,-75 L15,-25 L0,-40 L-15,-25 Z" fill="#FF6B35"></path>
+            <path d="M0,75 L15,25 L0,40 L-15,25 Z" fill="#13294B"></path>
+            <path d="M-75,0 L-25,15 L-40,0 L-25,-15 Z" fill="#007CBE"></path>
+            <path d="M75,0 L25,15 L40,0 L25,-15 Z" fill="#4A6FA5"></path>
+            
+            <!-- Cardinal Points -->
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="#13294B" text-anchor="middle" x="0" y="-80">N</text>
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="#13294B" text-anchor="middle" x="0" y="85">S</text>
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="#13294B" text-anchor="middle" x="-85" y="0">W</text>
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="#13294B" text-anchor="middle" x="85" y="0">E</text>
+            
+            <!-- Inner Circle -->
+            <circle cx="0" cy="0" r="20" fill="#13294B"></circle>
+            <circle cx="0" cy="0" r="15" fill="#FF6B35"></circle>
+            
+            <!-- Flight Path Lines -->
+            <g opacity="0.7">
+                <path d="M-70,-70 C-50,-30 -20,-20 0,0" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4,4"></path>
+                <path d="M70,-70 C50,-30 20,-20 0,0" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4,4"></path>
+                <path d="M-70,70 C-50,30 -20,20 0,0" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4,4"></path>
+                <path d="M70,70 C50,30 20,20 0,0" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4,4"></path>
+            </g>
+        </g>
+        
+        <!-- Small Planes -->
+        <g transform="translate(130, 60) rotate(45)">
+            <path d="M10,10 L40,10 C45,10 50,15 50,20 L50,30 C50,35 45,40 40,40 L10,40 C5,40 0,35 0,30 L0,20 C0,15 5,10 10,10 Z" fill="#FFFFFF" stroke="#13294B" stroke-width="1"></path>
+            <path d="M40,20 L60,15 L60,35 L40,30 Z" fill="#FF6B35"></path>
+            <rect fill="#4A6FA5" x="15" y="5" width="20" height="5"></rect>
+            <rect fill="#4A6FA5" x="15" y="40" width="20" height="5"></rect>
+            <circle fill="#13294B" cx="15" cy="25" r="5"></circle>
+            <circle fill="#13294B" cx="30" cy="25" r="5"></circle>
+        </g>
+        
+        <g transform="translate(370, 60) rotate(-45)">
+            <path d="M10,10 L40,10 C45,10 50,15 50,20 L50,30 C50,35 45,40 40,40 L10,40 C5,40 0,35 0,30 L0,20 C0,15 5,10 10,10 Z" fill="#FFFFFF" stroke="#13294B" stroke-width="1"></path>
+            <path d="M40,20 L60,15 L60,35 L40,30 Z" fill="#FF6B35"></path>
+            <rect fill="#4A6FA5" x="15" y="5" width="20" height="5"></rect>
+            <rect fill="#4A6FA5" x="15" y="40" width="20" height="5"></rect>
+            <circle fill="#13294B" cx="15" cy="25" r="5"></circle>
+            <circle fill="#13294B" cx="30" cy="25" r="5"></circle>
+        </g>
+        
+        <g transform="translate(370, 300) rotate(225)">
+            <path d="M10,10 L40,10 C45,10 50,15 50,20 L50,30 C50,35 45,40 40,40 L10,40 C5,40 0,35 0,30 L0,20 C0,15 5,10 10,10 Z" fill="#FFFFFF" stroke="#13294B" stroke-width="1"></path>
+            <path d="M40,20 L60,15 L60,35 L40,30 Z" fill="#FF6B35"></path>
+            <rect fill="#4A6FA5" x="15" y="5" width="20" height="5"></rect>
+            <rect fill="#4A6FA5" x="15" y="40" width="20" height="5"></rect>
+            <circle fill="#13294B" cx="15" cy="25" r="5"></circle>
+            <circle fill="#13294B" cx="30" cy="25" r="5"></circle>
+        </g>
+        
+        <g transform="translate(130, 300) rotate(135)">
+            <path d="M10,10 L40,10 C45,10 50,15 50,20 L50,30 C50,35 45,40 40,40 L10,40 C5,40 0,35 0,30 L0,20 C0,15 5,10 10,10 Z" fill="#FFFFFF" stroke="#13294B" stroke-width="1"></path>
+            <path d="M40,20 L60,15 L60,35 L40,30 Z" fill="#FF6B35"></path>
+            <rect fill="#4A6FA5" x="15" y="5" width="20" height="5"></rect>
+            <rect fill="#4A6FA5" x="15" y="40" width="20" height="5"></rect>
+            <circle fill="#13294B" cx="15" cy="25" r="5"></circle>
+            <circle fill="#13294B" cx="30" cy="25" r="5"></circle>
+        </g>
+        
+        <!-- Mission Labels -->
+        <g transform="translate(175, 80)">
+            <rect fill="#FFFFFF" x="0" y="0" width="150" height="30" rx="15"></rect>
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="#13294B" text-anchor="middle" x="75" y="20">LEADERSHIP</text>
+        </g>
+        
+        <g transform="translate(175, 320)">
+            <rect fill="#FFFFFF" x="0" y="0" width="150" height="30" rx="15"></rect>
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="#13294B" text-anchor="middle" x="75" y="20">INNOVATION</text>
+        </g>
+        
+        <g transform="translate(80, 200) rotate(-90)">
+            <rect fill="#FFFFFF" x="0" y="0" width="150" height="30" rx="15"></rect>
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="#13294B" text-anchor="middle" x="75" y="20">EXPERTISE</text>
+        </g>
+        
+        <g transform="translate(390, 200) rotate(90)">
+            <rect fill="#FFFFFF" x="0" y="0" width="150" height="30" rx="15"></rect>
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="#13294B" text-anchor="middle" x="75" y="20">EXCELLENCE</text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="400px" viewBox="0 0 500 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Aviation Hero</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="skyGradient">
+            <stop stop-color="#007CBE" offset="0%"></stop>
+            <stop stop-color="#13294B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="sunsetGradient">
+            <stop stop-color="#FF6B35" offset="0%"></stop>
+            <stop stop-color="#13294B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#EBF2FA" x="0" y="0" width="500" height="400"></rect>
+        
+        <!-- Sky -->
+        <path d="M0,0 L500,0 L500,300 C400,320 300,280 200,300 C100,320 0,300 0,280 L0,0 Z" fill="url(#skyGradient)"></path>
+        
+        <!-- Clouds -->
+        <ellipse fill="#FFFFFF" opacity="0.7" cx="100" cy="100" rx="30" ry="20"></ellipse>
+        <ellipse fill="#FFFFFF" opacity="0.7" cx="130" cy="105" rx="35" ry="15"></ellipse>
+        <ellipse fill="#FFFFFF" opacity="0.7" cx="70" cy="105" rx="25" ry="15"></ellipse>
+        
+        <ellipse fill="#FFFFFF" opacity="0.5" cx="400" cy="70" rx="40" ry="20"></ellipse>
+        <ellipse fill="#FFFFFF" opacity="0.5" cx="440" cy="75" rx="30" ry="15"></ellipse>
+        <ellipse fill="#FFFFFF" opacity="0.5" cx="380" cy="75" rx="25" ry="10"></ellipse>
+        
+        <!-- Airplane -->
+        <g transform="translate(200, 150)">
+            <!-- Airplane Body -->
+            <path d="M100,20 L220,20 C230,20 240,30 240,40 L240,60 C240,70 230,80 220,80 L100,80 L80,100 L60,80 L20,80 C10,80 0,70 0,60 L0,40 C0,30 10,20 20,20 L100,20 Z" fill="#FFFFFF" stroke="#13294B" stroke-width="2"></path>
+            
+            <!-- Windows -->
+            <circle fill="#4A6FA5" cx="40" cy="50" r="8"></circle>
+            <circle fill="#4A6FA5" cx="70" cy="50" r="8"></circle>
+            <circle fill="#4A6FA5" cx="100" cy="50" r="8"></circle>
+            <circle fill="#4A6FA5" cx="130" cy="50" r="8"></circle>
+            <circle fill="#4A6FA5" cx="160" cy="50" r="8"></circle>
+            <circle fill="#4A6FA5" cx="190" cy="50" r="8"></circle>
+            
+            <!-- Wing -->
+            <path d="M120,80 L180,80 L220,150 L80,150 L120,80 Z" fill="#FF6B35"></path>
+            
+            <!-- Tail -->
+            <path d="M70,20 L90,0 L110,20 L70,20 Z" fill="#FF6B35"></path>
+        </g>
+        
+        <!-- Digital elements representing technology -->
+        <rect x="50" y="250" width="40" height="25" rx="2" fill="#4A6FA5" opacity="0.8"></rect>
+        <rect x="55" y="255" width="30" height="3" rx="1" fill="#FFFFFF"></rect>
+        <rect x="55" y="262" width="20" height="3" rx="1" fill="#FFFFFF"></rect>
+        <rect x="55" y="269" width="25" height="3" rx="1" fill="#FFFFFF"></rect>
+        
+        <rect x="400" y="230" width="60" height="35" rx="2" fill="#4A6FA5" opacity="0.8"></rect>
+        <rect x="405" y="235" width="50" height="3" rx="1" fill="#FFFFFF"></rect>
+        <rect x="405" y="242" width="40" height="3" rx="1" fill="#FFFFFF"></rect>
+        <rect x="405" y="249" width="45" height="3" rx="1" fill="#FFFFFF"></rect>
+        <rect x="405" y="256" width="30" height="3" rx="1" fill="#FFFFFF"></rect>
+        
+        <circle cx="150" cy="270" r="25" fill="#13294B" opacity="0.8"></circle>
+        <circle cx="150" cy="270" r="20" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="3,3"></circle>
+        <circle cx="150" cy="270" r="5" fill="#FF6B35"></circle>
+    </g>
+</svg>

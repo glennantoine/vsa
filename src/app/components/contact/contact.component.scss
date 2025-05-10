@@ -1,0 +1,246 @@
+// Contact Hero
+.contact-hero {
+  background-color: var(--primary);
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.contact-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  
+  h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+  }
+}
+
+// Contact Section
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1.5fr;
+  }
+}
+
+.contact-info {
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  > p {
+    color: var(--gray-700);
+    margin-bottom: 2rem;
+  }
+}
+
+.info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  
+  mat-icon {
+    color: var(--primary);
+    margin-right: 1rem;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  div {
+    h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin: 0 0 0.5rem;
+      color: var(--gray-800);
+    }
+    
+    p {
+      margin: 0;
+      color: var(--gray-700);
+      
+      a {
+        color: var(--gray-700);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}
+
+.social-links {
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+    color: var(--gray-800);
+  }
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--gray-200);
+    color: var(--primary);
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: var(--primary);
+      color: white;
+      transform: translateY(-3px);
+    }
+  }
+}
+
+// Contact Form
+.contact-form-container {
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  > p {
+    color: var(--gray-700);
+    margin-bottom: 2rem;
+  }
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .form-group:nth-child(5),
+  .form-group:nth-child(6),
+  button {
+    grid-column: 1 / -1;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  
+  label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--gray-800);
+  }
+  
+  input, textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--gray-300);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    
+    &:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+    
+    &::placeholder {
+      color: var(--gray-500);
+    }
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+}
+
+button[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  justify-self: start;
+}
+
+// FAQ Section
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.faq-item {
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+    
+    &::before {
+      content: 'Q:';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent);
+      font-weight: 700;
+    }
+  }
+  
+  p {
+    color: var(--gray-700);
+    line-height: 1.6;
+    position: relative;
+    padding-left: 1.5rem;
+    margin: 0;
+    
+    &::before {
+      content: 'A:';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--primary);
+      font-weight: 700;
+    }
+  }
+}

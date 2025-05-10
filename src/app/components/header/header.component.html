@@ -1,0 +1,33 @@
+<header class="header" [class.scrolled]="isScrolled">
+  <div class="container">
+    <div class="header-content">
+      <a routerLink="/" class="logo">
+        <span class="logo-text">Aviation CTO</span>
+      </a>
+      
+      <button class="menu-toggle" (click)="toggleMenu()" aria-label="Toggle menu">
+        <mat-icon>{{ isMenuOpen ? 'close' : 'menu' }}</mat-icon>
+      </button>
+      
+      <nav class="main-nav" [class.open]="isMenuOpen">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">Home</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/services" routerLinkActive="active" (click)="closeMenu()">Services</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      
+      <a routerLink="/contact" class="contact-btn btn btn-accent">Get Started</a>
+    </div>
+  </div>
+</header>
+<div class="header-placeholder"></div>

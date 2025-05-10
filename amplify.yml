@@ -8,7 +8,7 @@ frontend:
       commands:
         - npm run build -- --configuration production
   artifacts:
-    baseDirectory: dist/aviation-cto
+    baseDirectory: dist/aviation-cto/browser
     files:
       - '**/*'
   cache:

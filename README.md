@@ -24,8 +24,8 @@ A professional Angular Material website for Aviation CTO/CISO services. This web
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/cto-services-website.git
-cd cto-services-website
+git clone https://github.com/glennantoine/aviation-cto.git
+cd aviation-cto
 ```
 
 2. Install dependencies
